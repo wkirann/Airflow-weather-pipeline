@@ -18,15 +18,15 @@ It fetches **real-time weather data** for Nashik, India, stores it in Postgres, 
 - **Python**: ETL logic (requests, pandas)
 
 ## Project Structure
- -
-  dags/
-  weather_pipeline_nashik.py
-  docker-compose.yaml
-  .env
-  requirements.txt
-  README.md
-  .gitignore
-  data/ (optional, for exported CSVs)
+ 
+ airflow-weather-pipeline/
+├── dags/
+│ └── weather_pipeline_nashik.py
+├── docker-compose.yaml
+├── .env
+├── requirements.txt
+├── README.md
+└── .gitignore
 
   
 ## Setup Instructions
@@ -57,6 +57,7 @@ docker compose up -d
 
 # 6. Verify Data
 - Open Postgres (e.g., DBeaver) → check table weather_data
+
 
 
 
