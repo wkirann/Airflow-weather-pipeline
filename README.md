@@ -18,7 +18,7 @@ It fetches **real-time weather data** for Nashik, India, stores it in Postgres, 
 - **Python**: ETL logic (requests, pandas)
 
 ## Project Structure
- 
+``` 
  airflow-weather-pipeline/
 ├── dags/
 │ └── weather_pipeline_nashik.py
@@ -27,6 +27,8 @@ It fetches **real-time weather data** for Nashik, India, stores it in Postgres, 
 ├── requirements.txt
 ├── README.md
 └── .gitignore
+
+```
 
   
 ## Setup Instructions
@@ -37,13 +39,14 @@ git clone https://github.com/yourusername/airflow-weather-pipeline.git
 cd airflow-weather-pipeline 
 
 # 2.Create a .env file in the project root:
+```
 AIRFLOW_UID=50000
 AIRFLOW__WEBSERVER__DEFAULT_USER=airflow
 AIRFLOW__WEBSERVER__DEFAULT_PASSWORD=airflow
 POSTGRES_USER=airflow
 POSTGRES_PASSWORD=airflow
 POSTGRES_DB=airflow
-
+```
 # 3.Install Dependencies
 pip install -r requirements.txt
 
@@ -57,6 +60,7 @@ docker compose up -d
 
 # 6. Verify Data
 - Open Postgres (e.g., DBeaver) → check table weather_data
+
 
 
 
