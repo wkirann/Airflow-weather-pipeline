@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+
+# Airflow
+logs/
+*.db
+airflow.cfg
+
+# Docker
+DockerDesktop-data/
+.docker/
+*.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
