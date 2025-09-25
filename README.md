@@ -33,10 +33,11 @@ It fetches **real-time weather data** for Nashik, India, stores it in Postgres, 
   
 ## Setup Instructions
 
-### 1. Clone the Repository
-
+# 1. Clone the Repository
+```bash
 git clone https://github.com/yourusername/airflow-weather-pipeline.git
 cd airflow-weather-pipeline 
+```
 
 # 2.Create a .env file in the project root:
 ```
@@ -48,11 +49,13 @@ POSTGRES_PASSWORD=airflow
 POSTGRES_DB=airflow
 ```
 # 3.Install Dependencies
+```
 pip install -r requirements.txt
-
+```
 # 4. Start Docker Containers
+```
 docker compose up -d
-
+```
 # 5. Access Airflow UI
 - Open your browser: http://localhost:8080
 - Login with credentials from .env
@@ -60,6 +63,7 @@ docker compose up -d
 
 # 6. Verify Data
 - Open Postgres (e.g., DBeaver) → check table weather_data
+
 
 
 
